@@ -191,7 +191,7 @@ public class DownedPlayer {
     }
 
     public void resetAllMaps() {
-        ArrayList cloneList = new ArrayList();
+        ArrayList<Player> cloneList = new ArrayList();
         this.revivalList.forEach(p -> cloneList.add(p));
         cloneList.forEach(p -> {
             this.resetMaps((Player)p);
